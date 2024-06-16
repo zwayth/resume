@@ -1,0 +1,130 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Alex Webb} \\
+  \small 555-123-4567 $|$ \href{mailto:alex@email.com}{alex@email.com} $|$ 
+  \href{https://linkedin.com/in/burhan-webb}{linkedin.com/in/alexwebbx} $|$
+  \href{https://github.com/zwayth}{github.com/alexwebbx}
+\end{center}
+
+\section*{Summary}
+Passionate AI/ML engineer with a strong background in deep learning, computer vision, and natural language processing. Skilled in Python, TensorFlow, PyTorch, and various ML libraries. Excellent problem-solving, research, and collaboration abilities. Seeking a challenging role to develop cutting-edge AI solutions.
+
+\section{Technical Skills}
+\resumeSubHeadingList
+  \resumeItem{\textbf{Programming Languages}: Python, C++, SQL, MATLAB}
+  \resumeItem{\textbf{Deep Learning Frameworks}: TensorFlow, PyTorch, Keras, Caffe}
+  \resumeItem{\textbf{Libraries \& Tools}: NumPy, Pandas, Scikit-learn, OpenCV, NLTK, Git, Docker}
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Image Captioning System}{Jan 2023 -- Present}
+      {Deep Learning Project}{Python, TensorFlow, OpenCV}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Developed an end-to-end system for generating descriptive captions for images}
+          \resumeItem{\textbullet\ Utilized CNN and LSTM models for image feature extraction and caption generation}
+          \resumeItem{\textbullet\ Achieved state-of-the-art performance on the COCO dataset}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Sentiment Analysis API}{Aug 2022 -- Dec 2022} 
+      {Natural Language Processing}{Python, Flask, NLTK, Hugging Face}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Built a RESTful API for sentiment analysis of text data}
+          \resumeItem{\textbullet\ Implemented pre-trained transformer models using Hugging Face}
+          \resumeItem{\textbullet\ Deployed the API on a cloud platform for easy integration}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {AI Research Intern}{June 2022 -- Aug 2022}
+      {DeepMind}{London, UK}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Conducted research on reinforcement learning algorithms for robotics}
+          \resumeItem{\textbullet\ Implemented and evaluated deep RL models using PyTorch and RLlib}
+          \resumeItem{\textbullet\ Presented findings at weekly research meetings}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Machine Learning Engineer}{Jan 2021 -- May 2022}
+      {Acme AI Solutions}{San Francisco, CA}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Developed and deployed machine learning models for various industries}
+          \resumeItem{\textbullet\ Optimized model performance and ensured data quality}
+          \resumeItem{\textbullet\ Collaborated with cross-functional teams to deliver AI solutions}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {M.S. in Computer Science, Artificial Intelligence}{Aug 2019 -- May 2021}
+  \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {B.S. in Electrical Engineering and Computer Science}{Aug 2015 -- May 2019}
+\resumeSubHeadingListEnd
+
+\section{Certifications}
+\resumeSubHeadingList
+  \resumeItem{\textbullet\ AWS Certified Machine Learning - Specialty}
+  \resumeItem{\textbullet\ TensorFlow Developer Certificate}
+\resumeSubHeadingListEnd
+
+\end{document}
